@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root
+{
+    --main-color: #f4d04e;
+    --white-color: #ffffff;
+    --paragraph-color: #6b6b6b;
+    --text-color:  #121212;
+}
+
+
+
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+
+body
+{
+    background-color: var(--main-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card
+{
+    width: 330px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+    border-radius: 15px;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 0px 1px #000;
+
+}
+.card > .container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px 16px;
+}
+.card > .container > img
+{
+    width: 295px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card > .container > .card_category
+{
+    background-color: var(--main-color);
+    max-width: 80px;
+    padding: 5px 40px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 15px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.card > .container > .card_date
+{
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+    
+}
+
+.card > .container > h1
+{
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.card > .container > p
+{
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--paragraph-color);
+}
+
+.card > .container  .publisher
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.card > .container  .publisher > img
+{
+    width: 30px;
+}
+
+.card > .container  .publisher > h5
+{
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.attribution
+{
+    text-align: center;
+}
